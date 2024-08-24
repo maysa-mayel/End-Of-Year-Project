@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>CamBuy</title>
+    <link rel="icon" href="./asstes/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+          <div class="logo">
+              <img src="./asstes/logo.png" alt="Logo">
+          </div>
+          <div class="navigation">
+              <a href="home.html">Home</a>
+              <div class="sep">|</div>
+              <a href="login.html">Account </a> 
+              <span id="accountLink"></span>
+              
+              <div class="dropdown">
+                  <img src="./asstes/433225597_1532676750909517_7352723486699620138_n.png" alt="Cart" width="40" height="40">
+                  <div class="dropdown-content">
+                      <a href="#">View Cart</a>
+                      <a href="payment.html">Checkout</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="lower-header">
+        <div class="navigation">
+            <div class="dropdown">
+              <div class="all">
+                <img   src="asstes/menu.png" width="15" height="15"  >
+                All
+              </div>
+                <div class="dropdown-content">
+                    <a href="login.html">Profile</a>
+                    <a href="">Customer Service</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="webcam.html">Scanning</a>
+                    <a href="payment.html">Payment</a>
+                </div>
+            </div>
+            <a href="">Customer Service</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="webcam.html">Scanning</a>
+        </div>
+    </div>
+  </header>
+
+
+  <div class="content-area">
+    <div class="content">
+        <p>Welcome to CamBuy, the Tunisian commercial site that aims to
+            revolutionize<br> the shopping experience.<br> 
+           Our innovative object detection by camera and price calculation services provide<br> 
+            personalized recommendations just for you. <br> Enjoy ourexceptional
+            shopping experience and contact  customer service<br> with
+            questions or comments.</p>
+        <button onclick="location.href='webcam.html';">Scan Now</button>
+    </div>
+</div>
+<script>
+    // Check if the user is logged in
+    var username = localStorage.getItem('username');
+    if (username) {
+        // Display the username instead of "Account"
+        document.getElementById('accountLink').textContent = username;
+    } else {
+        // If not logged in, display "Account" as usual
+        document.getElementById('accountLink').textContent = 'Account';
+    }
+</script>
+  </body>
+</html>

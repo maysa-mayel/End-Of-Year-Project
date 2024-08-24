@@ -1,0 +1,134 @@
+
+  /*header*/
+  body {
+    margin: 0;
+    padding: 0;
+    }
+  
+  
+  .top-header {
+    background-color:#11111F;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+  
+  .logo img {
+    width: 120px; /* Adjust the maximum width of the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .top-header .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-header .navigation a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+  }
+  
+  .top-header .navigation a:hover {
+    color: gray;
+  }
+  .sep{
+    color:#fff;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .lower-header {
+    background-color:#252F3D;
+    padding: 7.5px 10px;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .lower-header .navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lower-header .navigation a {
+    text-decoration: none;
+    color: #ffff;
+    margin-left: 20px;
+  }
+  
+  .lower-header .navigation a:hover {
+    color: gray;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #252F3D;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .all{
+    color: white;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color:  #11111F;
+  }
+  
+/*core webcam page */
+
+
+
+.mode{
+  justify-content: space-evenly ;
+  display:flex;
+  margin-top: 10px;
+  align-items: flex-end;
+}
+
+#paymentText{color:rgb(38, 222, 38);} 
+#existText{color:red;} 
+  
+
+
+/* New CSS styles for layout */
+.content-area{
+  display: block;
+  justify-content:space-between;
+  
+}
+
+.container {
+  flex: 1;
+  margin-right: 20px; /* Adjust spacing between columns */
+  display: grid;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.webcam-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+#video-container {
+  margin: 0 20px; /* 20px margin on both sides */
+  max-width: calc(100% - 40px); /* 100% width minus 40px for the margins */
+}

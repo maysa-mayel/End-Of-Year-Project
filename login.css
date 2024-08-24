@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-form {
+  width: 500px; /* Adjust as needed */
+  min-height: 300px;
+  margin: 0 auto; /* Center the container */
+  text-align: center; /* Center the text within the container */
+  /*background-color: #fff; /* White background */
+  border-radius: 45px; 
+  padding: 20px;
+  border: none; /* Removed border */
+  border-radius: 10px; /* Adjusted border-radius */
+  background-color: rgba(255, 255, 255, 0.8); /* Adjusted background color and opacity */
+  text-align: center;
+  align-items: flex-end;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  
+}
+
+.input-group {
+  margin-bottom: 20px; /* Increased margin-bottom */
+}
+
+.input-group label {
+  margin-top: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: bold; /* Added font-weight */
+  justify-content: left;
+  margin-left: 50px;
+}
+
+.input-group input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 45px; /* Rounded border */
+}
+
+button {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #11111F;
+  color: #fff;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: green; /* Adjusted hover background color */
+}
+
+.top-header {
+  background-color: #11111F;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Adjusted height */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  }
+
+
+.top-header {
+  background-color:#11111F;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+
+.logo img {
+  width: 120px; /* Adjust the maximum width of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+.top-header .navigation {
+  display: flex;
+  align-items: center;
+}
+
+.top-header .navigation a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+}
+
+.top-header .navigation a:hover {
+  color: gray;
+}
+.sep{
+  color:#fff;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.lower-header {
+  background-color:#252F3D;
+  padding: 7.5px 10px;
+  display: flex;
+  justify-content: left;
+}
+
+.lower-header .navigation {
+  display: flex;
+  align-items: center;
+}
+
+.lower-header .navigation a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffff;
+  
+}
+
+.lower-header .navigation a:hover {
+  color: gray;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #252F3D;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.all{
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color:  #11111F;
+}
+
+
+.content-area {
+  background-color: #EFC6A8; /* Background color */
+  padding: 20px; /* Padding from both sides */
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  min-height: calc(90vh - 50px);
+  background-image: url("asstes/429915635_3747899385498954_1847621093343507239_n.png"); /* Background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  text-align: center; /* Center text within content */
+
+}
+
+
+.content p {
+  font-size: 28px;
+  color:black ;
+  text-align: center; /* Adjust font size as needed */
+  padding-bottom: 30px;
+  align-self: flex-end;
+}
+

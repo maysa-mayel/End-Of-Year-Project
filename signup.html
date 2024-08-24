@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>CamBuy</title>
+    <link rel="icon" href="./asstes/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+          <div class="logo">
+              <img src="./asstes/logo.png" alt="Logo">
+          </div>
+          <div class="navigation">
+              <a href="home.html">Home</a>
+              <div class="sep">|</div>
+              <a href="login.html">Account </a> 
+              <span id="accountLink"></span>
+              
+              <div class="dropdown">
+                  <img src="./asstes/433225597_1532676750909517_7352723486699620138_n.png" alt="Cart" width="40" height="40">
+                  <div class="dropdown-content">
+                      <a href="#">View Cart</a>
+                      <a href="payment.html">Checkout</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="lower-header">
+        <div class="navigation">
+            <div class="dropdown">
+              <div class="all">
+                <img   src="asstes/menu.png" width="15" height="15"  >
+                All
+              </div>
+                <div class="dropdown-content">
+                    <a href="login.html">Profile</a>
+                    <a href="customer-service.html">Customer Service</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="webcam.html">Scanning</a>
+                    <a href="payment-history.html">Payment History</a>
+                </div>
+            </div>
+            <a href="customer-service.html">Customer Service</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="webcam.html">Scanning</a>
+        </div>
+    </div>
+  </header>
+        
+  <div class="content-area">
+    <div class="signup-form">
+        <h2>Create Account</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="username">Username<p> *</p></label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="input-group">
+                <label for="email">Email<p> *</p></label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password<p> *</p></label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password<p> *</p></label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</div>
+    </div>
+    
+</div>
+
+    
+
+    <script>
+        // Get the sign-up form element
+        const signupForm = document.getElementById('signupForm');
+
+        // Add event listener for form submission
+        signupForm.addEventListener('submit', function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+
+            // Get username input value
+            const username = document.getElementById('username').value;
+
+            // Update account link with entered username
+            document.getElementById('accountLink').textContent = username;
+
+            // Redirect to home page
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

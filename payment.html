@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>CamBuy</title>
+    <link rel="icon" href="./asstes/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="./payment.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+          <div class="logo">
+              <img src="./asstes/logo.png" alt="Logo">
+          </div>
+          <div class="navigation">
+              <a href="home.html">Home</a>
+              <div class="sep">|</div>
+              <a href="login.html">Account </a> 
+              <span id="accountLink"></span>
+              
+              <div class="dropdown">
+                  <img src="./asstes/433225597_1532676750909517_7352723486699620138_n.png" alt="Cart" width="40" height="40">
+                  <div class="dropdown-content">
+                      <a href="#">View Cart</a>
+                      <a href="payment.html">Checkout</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="lower-header">
+        <div class="navigation">
+            <div class="dropdown">
+              <div class="all">
+                <img   src="asstes/menu.png" width="15" height="15"  >
+                All
+              </div>
+                <div class="dropdown-content">
+                    <a href="login.html">Profile</a>
+                    <a href="customer-service.html">Customer Service</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="webcam.html">Scanning</a>
+                    <a href="payment-history.html">Payment History</a>
+                </div>
+            </div>
+            <a href="customer-service.html">Customer Service</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="webcam.html">Scanning</a>
+        </div>
+    </div>
+  </header>
+        
+  <div class="content-area">
+    <div class="feedback-container">
+        <h2>Payment</h2>
+        
+        <div class="info">
+          <div class="field">
+            <label>Username :</label> 
+            <span>Mayssa mayel </span> 
+            <button class="edit-btn">Edit</button> 
+          </div>
+          <div class="field"style{justifiy-content: space-between;}>
+            <label>Total amount :</label>
+            <span>4.500 dt</span>
+            <button class="edit-btn">Edit</button>
+          </div>
+        </div>
+      
+        <p>Payment methods :</p>
+      <div class="methods" style{display:inline;}>
+          <label><input type="radio" name="payment-method" value="visa"> Visa Card</label>
+          <label><input type="radio" name="payment-method" value="mastercard"> MasterCard</label>
+          <label><input type="radio" name="payment-method" value="e-dina"> E-dina Card</label>
+      </div>
+      
+      <div class="card-info">
+          <div class="field">
+              <label for="card-number">Card number :</label>
+              <input type="text" id="card-number" required>
+          </div>
+          <div class="exp-cvv">
+              <div class="field">
+                  <label for="expiration-date">Expiration Date :</label>
+                  <input type="text" id="expiration-date" required>
+              </div>
+              <div class="field">
+                  <label for="cvv">CV code :</label>
+                  <input type="text" id="cvv" required>
+              </div>
+          </div>
+          <div class="field">
+              <label for="code">Code (8 digits) :</label>
+              <input type="text" id="code" required>
+          </div>
+      </div>
+      
+      <div class="captcha">
+          <label><input type="checkbox"> I'm not a robot</label>
+          <div class="captcha-box"></div> 
+      </div>
+      <div class="S"><button type="submit">pay</button></div>
+      
+    </div>
+    
+</div>
+<script>
+    // Check if the user is logged in
+    var username = localStorage.getItem('username');
+    if (username) {
+        // Display the username instead of "Account"
+        document.getElementById('accountLink').textContent = username;
+    } else {
+        // If not logged in, display "Account" as usual
+        document.getElementById('accountLink').textContent = 'Account';
+    }
+    
+    const stars = document.querySelectorAll('.star');
+    let rating = 0;
+
+    stars.forEach(star => {
+      star.addEventListener('click', () => {
+        const value = parseInt(star.dataset.value);
+        rating = value; // Update rating value
+        highlightStars(value);
+      });
+    });
+
+    function highlightStars(value) {
+      stars.forEach((star, index) => {
+        if (index < value) {
+          star.src = 'filled-star.png'; // Use filled star image
+        } else {
+          star.src = 'empty-star.png'; // Use empty star image
+        }
+      });
+    }
+
+
+
+  textarea.addEventListener('keyup', () => {
+    const remainingChars = 300 - textarea.value.length;
+    charCount.textContent = remainingChars + '/300';
+  });
+</script>
+  </body>
+</html>
