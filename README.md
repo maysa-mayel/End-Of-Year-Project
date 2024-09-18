@@ -6,8 +6,8 @@ Custom Dataset Training: Trained YOLOv8 on a customized dataset optimized for Tu
 
 Integration of Flask and Frontend Technologies: Integrated Flask for backend development and utilized HTML, CSS, and JavaScript for frontend implementation, delivering a seamless and responsive user interface for enhanced usability.
 
-[![Watch the video](https://github.com/End-Of-Year-Project
-/Screenshot 2024-09-18 020035.png
+([https://github.com/End-Of-Year-Project
+/Screenshot 2024-09-18 020035.png](https://github.com/maysa-mayel/End-Of-Year-Project/blob/main/Screenshot%202024-09-18%20020035.png)
 )](https://vimeo.com/965582272?share=copy
 ))
 
