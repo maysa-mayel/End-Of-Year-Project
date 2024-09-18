@@ -8,4 +8,4 @@ Integration of Flask and Frontend Technologies: Integrated Flask for backend dev
 
 [![Watch the video](https://raw.githubusercontent.com/maysa-mayel/End-Of-Year-Project/main/Screenshot%202024-09-18%20020035.png)](https://vimeo.com/965582272)
 
-
+[![Watch the video](https://raw.githubusercontent.com/maysa-mayel/End-Of-Year-Project/main/Screenshot%202024-09-18%20020035.png)](https://vimeo.com/965582272)
